@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "projeto_aula",
-    "slug": "projeto_aula",
+    "name": "note_app",
+    "slug": "note_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,13 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "note-app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.melk.note_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
