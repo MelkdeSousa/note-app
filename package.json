@@ -1,7 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -9,7 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "~44.0.6",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "expo": "~44.0.0",
+    "expo-sqlite": "~10.1.0",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -17,11 +18,10 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5"
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "typescript": "~4.3.5"
   },
-  "private": true,
-  "engines": {
-    "node": ">=16.0.0",
-    "pnpm": ">=7.0.0"
-  }
+  "private": true
 }
